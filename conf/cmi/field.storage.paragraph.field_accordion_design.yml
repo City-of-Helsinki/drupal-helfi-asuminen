@@ -1,0 +1,29 @@
+uuid: 4e9f1a90-2e52-4cdd-8567-44e0119617a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: rbDxhjXfPHMDYJqUlYnmt8r427vL0vzSOd5SQ3H6ZGU
+id: paragraph.field_accordion_design
+field_name: field_accordion_design
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: white
+      label: White
+    -
+      value: grey
+      label: Grey
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

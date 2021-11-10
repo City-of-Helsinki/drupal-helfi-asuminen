@@ -1,0 +1,9 @@
+uuid: a69970cb-1bf0-4631-a26c-47297512f339
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4LnWqTxx8bp4ew1DS7XZOmhHzO_B-us0REW1efp3xRk
+id: node__landing_page
+label: 'Content: Landing page'
+tags: {  }

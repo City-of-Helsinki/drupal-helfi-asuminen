@@ -1,0 +1,26 @@
+uuid: 60f16f53-b150-4edb-84f0-2c76e14b1043
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.content_liftup
+_core:
+  default_config_hash: YJo-TIdvyPiJJX4wEnY5rLCoDcpAVZD4KftOr6BEyAI
+id: paragraph.content_liftup.default
+targetEntityType: paragraph
+bundle: content_liftup
+mode: default
+content:
+  field_content_liftup_unit:
+    region: content
+    settings:
+      match_limit: 10
+      match_operator: CONTAINS
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    weight: 2
+hidden:
+  created: true
+  status: true
