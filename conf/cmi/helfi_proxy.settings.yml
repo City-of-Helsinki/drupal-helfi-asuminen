@@ -1,0 +1,7 @@
+langcode: en
+asset_path: asuminen-assets
+prefixes:
+  en: housing
+  fi: asuminen
+  sv: boende
+  ru: housing
