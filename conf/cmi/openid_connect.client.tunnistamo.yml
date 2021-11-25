@@ -1,0 +1,15 @@
+uuid: 06a83bc7-6d02-4f75-b4f7-7034b0ffcf51
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tunnistamo
+_core:
+  default_config_hash: nGpk9fP8YMhP_c3Sz_aCQFVhAJyN6eJI6E4Qpnqna-A
+id: tunnistamo
+label: Tunnistamo
+plugin: tunnistamo
+settings:
+  is_production: 0
+  client_id: placeholder
+  client_secret: placeholder
