@@ -1,4 +1,4 @@
-# City of Helsinki - Asuminent Drupal 9 project
+# City of Helsinki - Asuminen Drupal 9 project
 
 ## Environments
 
