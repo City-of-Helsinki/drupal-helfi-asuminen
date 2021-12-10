@@ -4191,16 +4191,16 @@
         },
         {
             "name": "drupal/helfi_proxy",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy.git",
-                "reference": "93981f347728080258ec6bc79f9245c21c27c0dd"
+                "reference": "45490cbe5fb49289d6fd5df456a98dcab3f27ee0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-proxy/zipball/93981f347728080258ec6bc79f9245c21c27c0dd",
-                "reference": "93981f347728080258ec6bc79f9245c21c27c0dd",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-proxy/zipball/45490cbe5fb49289d6fd5df456a98dcab3f27ee0",
+                "reference": "45490cbe5fb49289d6fd5df456a98dcab3f27ee0",
                 "shasum": ""
             },
             "require": {
@@ -4221,10 +4221,10 @@
             ],
             "description": "Provides various fixes so we can serve multiple Drupal instances in one domain.",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/tree/2.0.0",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/tree/2.0.1",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-proxy/issues"
             },
-            "time": "2021-12-09T09:04:05+00:00"
+            "time": "2021-12-10T11:26:44+00:00"
         },
         {
             "name": "drupal/helfi_tpr",
