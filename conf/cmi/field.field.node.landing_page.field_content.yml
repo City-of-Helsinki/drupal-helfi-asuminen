@@ -40,6 +40,7 @@ settings:
       content_liftup: content_liftup
       from_library: from_library
       remote_video: remote_video
+      map: map
     target_bundles_drag_drop:
       accordion:
         weight: -22
@@ -83,6 +84,9 @@ settings:
       list_of_links_item:
         weight: -16
         enabled: false
+      map:
+        enabled: true
+        weight: -20
       remote_video:
         enabled: true
         weight: 27
