@@ -1,6 +1,6 @@
 uuid: 6eed6db0-69ae-40ce-9322-c055ac8de861
-name: 'Drush Site-Install'
-mail: admin@example.com
+name: Housing
+mail: drupal@hel.fi
 slogan: ''
 page:
   403: ''
