@@ -8,21 +8,8 @@ social_media:
     weight: 1
     attributes: "target|_blank\r\nclass|facebook-share"
     drupalSettings: ''
-    img: facebook
     library: ''
-  facebook_msg:
-    enable: 1
-    api_url: 'FB.ui({method: ''send'',link: ''[current-page:url]''})'
-    api_event: onclick
-    drupalSettings: 'application_id|Your Application ID'
-    library: social_media/facebook
-    text: 'Facebook messenger'
-    default_img: 1
-    weight: 2
-    attributes: |-
-      target|_blank
-      class|facebook-msg
-      rel|noopener noreferrer
+    img: facebook
   linkedin:
     enable: 1
     api_url: 'http://www.linkedin.com/shareArticle?mini=true&url=[current-page:url]&title=[current-page:title]&source=[current-page:url]'
@@ -32,8 +19,8 @@ social_media:
     weight: 3
     attributes: "target|_blank\r\nclass|linkedin"
     drupalSettings: ''
-    img: linkedin
     library: ''
+    img: linkedin
   twitter:
     enable: 1
     api_url: 'https://twitter.com/intent/tweet?url=[current-page:url]&status=[current-page:title]+[current-page:url]'
@@ -43,28 +30,8 @@ social_media:
     weight: 4
     attributes: "target|_blank\r\nclass|twitter"
     drupalSettings: ''
-    img: twitter
     library: ''
-  pinterest:
-    enable: 1
-    api_url: 'https://www.pinterest.com/pin/create/button/?url=[current-page:url]&description=[current-page:title]'
-    api_event: href
-    text: Pinterest
-    default_img: 1
-    weight: 5
-    attributes: |-
-      target|_blank
-      class|pinterest
-      rel|noopener noreferrer
-  whatsapp:
-    enable: 0
-    api_url: 'https://wa.me/?text=[current-page:url]'
-    api_event: href
-    default_img: 1
-    attributes: |-
-      class|whatsapp show-for-small-only
-      data-action|share/whatsapp/share
-    weight: 6
+    img: twitter
   email:
     enable: 1
     api_url: 'mailto:?subject=[current-page:title]&body=Check out this site [current-page:url]'
@@ -74,18 +41,10 @@ social_media:
     weight: 7
     attributes: class|email
     drupalSettings: ''
-    enable_forward: 0
-    img: email
     library: ''
+    img: email
+    enable_forward: 0
     show_forward: 1
-  print:
-    enable: 0
-    api_url: window.print()
-    api_event: onclick
-    text: Print
-    default_img: 1
-    attributes: class|print
-    weight: 8
 langcode: en
 _core:
-  default_config_hash: dfTa2HkSKvNWB_DYT7sVaiv7lztYl_vQaZyE9901WpE
+  default_config_hash: AyqoIo0GS3jnXfsBkJZCiVA4WsqNkQItXRfQMmg91jI
