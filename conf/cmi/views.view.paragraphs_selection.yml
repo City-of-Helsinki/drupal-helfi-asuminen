@@ -313,7 +313,8 @@ display:
     display_title: 'Entity reference'
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        metatag_display_extender: {  }
       rendering_language: '***LANGUAGE_language_content***'
       pager:
         type: some

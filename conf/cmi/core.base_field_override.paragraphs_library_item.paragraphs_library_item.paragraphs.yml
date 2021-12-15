@@ -7,13 +7,13 @@ dependencies:
     - paragraphs.paragraphs_type.banner
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.content_cards
-    - paragraphs.paragraphs_type.content_liftup
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.liftup_with_image
     - paragraphs.paragraphs_type.list_of_links
-    - paragraphs.paragraphs_type.sidebar_text
+    - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
     - paragraphs_library
@@ -38,63 +38,60 @@ settings:
       banner: banner
       columns: columns
       content_cards: content_cards
-      content_liftup: content_liftup
       gallery: gallery
       image: image
       liftup_with_image: liftup_with_image
       list_of_links: list_of_links
-      sidebar_text: sidebar_text
       text: text
+      unit_search: unit_search
+      map: map
     target_bundles_drag_drop:
       accordion:
         enabled: '1'
-        weight: '21'
+        weight: '16'
       accordion_item:
-        weight: '22'
+        weight: '17'
         enabled: 0
       banner:
         enabled: '1'
-        weight: '23'
+        weight: '18'
       columns:
         enabled: '1'
-        weight: '24'
+        weight: '19'
       content_cards:
         enabled: '1'
-        weight: '25'
-      content_liftup:
-        enabled: '1'
-        weight: '26'
+        weight: '20'
       from_library:
-        weight: '27'
+        weight: '21'
         enabled: 0
       gallery:
         enabled: '1'
-        weight: '28'
+        weight: '22'
       gallery_slide:
-        weight: '29'
+        weight: '23'
         enabled: 0
       hero:
-        weight: '30'
+        weight: '24'
         enabled: 0
       image:
         enabled: '1'
-        weight: '31'
+        weight: '25'
       liftup_with_image:
         enabled: '1'
-        weight: '32'
+        weight: '26'
       list_of_links:
         enabled: '1'
-        weight: '33'
+        weight: '27'
       list_of_links_item:
-        weight: '34'
+        weight: '28'
         enabled: 0
-      remote_video:
-        weight: '36'
-        enabled: 0
-      sidebar_text:
-        enabled: '1'
-        weight: '38'
       text:
         enabled: '1'
-        weight: '39'
+        weight: '29'
+      unit_search:
+        enabled: '1'
+        weight: '30'
+      map:
+        enabled: '1'
+        weight: '31'
 field_type: entity_reference_revisions

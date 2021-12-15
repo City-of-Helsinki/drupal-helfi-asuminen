@@ -9,7 +9,8 @@ label: Global
 tags:
   canonical_url: '[current-page:url]'
   title: '[current-page:title] | [site:page-title-suffix]'
-  image_src: /themes/contrib/hdbt/src/images/og-global.png
   twitter_cards_page_url: '[current-page:url]'
   twitter_cards_title: '[current-page:title] | [site:page-title-suffix]'
   twitter_cards_type: summary_large_image
+  og_image: '[site:default-og-image]'
+  twitter_cards_image: '[site:default-og-image]'
