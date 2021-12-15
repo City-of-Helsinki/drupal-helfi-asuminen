@@ -37,9 +37,9 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-      linkit_profile: tpr_content
-      linkit_auto_link_text: 0
       link_target: ''
+      linkit_auto_link_text: 0
+      linkit_profile: tpr_content
     third_party_settings: {  }
     type: link_target_field_widget
     region: content

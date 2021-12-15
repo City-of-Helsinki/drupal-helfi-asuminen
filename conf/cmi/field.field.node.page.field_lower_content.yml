@@ -1,4 +1,4 @@
-uuid: b9a89eb1-5b2f-48b6-896f-a12b43010937
+uuid: 419dc7e6-3c76-4be5-a398-ee255e621764
 langcode: en
 status: true
 dependencies:
@@ -14,12 +14,12 @@ dependencies:
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.image
     - paragraphs.paragraphs_type.list_of_links
+    - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.remote_video
     - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.unit_search
   module:
     - entity_reference_revisions
-_core:
-  default_config_hash: YD6Rdw1iEhjKEPsmTgUaoyfl5iIRhW7JsotBCZkhRv4
 id: node.page.field_lower_content
 field_name: field_lower_content
 entity_type: node
@@ -44,7 +44,9 @@ settings:
       content_cards: content_cards
       content_liftup: content_liftup
       banner: banner
+      unit_search: unit_search
       from_library: from_library
+      map: map
       remote_video: remote_video
     target_bundles_drag_drop:
       accordion:
@@ -89,10 +91,16 @@ settings:
       list_of_links_item:
         weight: -17
         enabled: false
+      map:
+        enabled: true
+        weight: 31
       remote_video:
         enabled: true
         weight: 32
       text:
         enabled: true
         weight: -29
+      unit_search:
+        enabled: true
+        weight: -16
 field_type: entity_reference_revisions

@@ -1,5 +1,6 @@
 langcode: en
 asset_path: asuminen-assets
+front_page_title: Housing
 prefixes:
   en: housing
   fi: asuminen
