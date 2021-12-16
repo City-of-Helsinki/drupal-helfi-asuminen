@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   address: 0
   admin_toolbar: 0
@@ -50,9 +52,9 @@ module:
   helfi_media_map_config: 0
   helfi_platform_config: 0
   helfi_proxy: 0
+  helfi_toc: 0
   helfi_tpr: 0
   helfi_tpr_config: 0
-  helfi_toc: 0
   helfi_tunnistamo: 0
   image: 0
   image_style_quality: 0
@@ -132,5 +134,3 @@ theme:
   gin: 0
   hdbt_admin: 0
 profile: minimal
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

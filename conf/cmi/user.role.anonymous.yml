@@ -1,11 +1,17 @@
 uuid: 357e24fb-69cd-43a3-9d59-ef7e50cb2e5d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - eu_cookie_compliance
+    - helfi_api_base
+    - helfi_tpr
+    - media
+    - system
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
-label: 'Anonymous user'
+label: 'Anonyymi käyttäjä'
 weight: 0
 is_admin: false
 permissions:
