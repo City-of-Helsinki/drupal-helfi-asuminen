@@ -12,7 +12,6 @@ field_name: field_accordion_title_level
 entity_type: paragraph
 type: list_string
 settings:
-  allowed_values_function: ''
   allowed_values:
     -
       value: '2'
@@ -29,6 +28,7 @@ settings:
     -
       value: '6'
       label: h6
+  allowed_values_function: ''
 module: options
 locked: false
 cardinality: 1
