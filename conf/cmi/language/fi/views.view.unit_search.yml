@@ -1,13 +1,6 @@
 display:
   default:
     display_options:
-      filters:
-        combine:
-          group_info:
-            description: ''
-            label: 'Combine fields filter'
-          expose:
-            label: Search
       empty:
         area:
           content:
@@ -33,6 +26,12 @@ display:
           separator: ', '
         address__address_line2:
           separator: ', '
+      filters:
+        combine:
+          expose:
+            label: Etsi
+          group_info:
+            label: 'Combine fields filter'
       arguments:
         id:
           exception:
