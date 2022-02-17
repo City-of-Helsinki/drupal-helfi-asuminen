@@ -1,3 +1,4 @@
+uuid: 257f5d2c-4e17-4f1f-9971-280322b4b7b2
 langcode: en
 status: true
 dependencies: {  }
@@ -133,3 +134,8 @@ permissions:
   - 'set announcement published on date'
   - 'translate announcement node'
   - 'view announcement revisions'
+  - 'create helfi_chart media'
+  - 'delete any helfi_chart media'
+  - 'delete own helfi_chart media'
+  - 'edit any helfi_chart media'
+  - 'edit own helfi_chart media'
