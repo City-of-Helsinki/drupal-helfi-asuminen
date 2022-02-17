@@ -42,11 +42,6 @@ display:
             label: 'Status för publicering'
           group_info:
             label: Publicerad
-            group_items:
-              1:
-                title: Publicerad
-              2:
-                title: 'Ej publicerad'
         name:
           expose:
             label: Namn
