@@ -43,6 +43,11 @@ display:
             label: 'Julkaisun tila'
           group_info:
             label: Julkaistu
+            group_items:
+              1:
+                title: Julkaistu
+              2:
+                title: Julkaisematon
         name:
           expose:
             label: Nimi
