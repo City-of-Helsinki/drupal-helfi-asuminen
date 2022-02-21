@@ -1,0 +1,25 @@
+uuid: 14acbd92-cc28-46a1-8271-0db64c191e1b
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_platform_config
+    - system
+  theme:
+    - hdbt
+id: watsonchatbot
+theme: hdbt
+region: attachments
+weight: 0
+provider: null
+plugin: watson_chatbot
+settings:
+  id: watson_chatbot
+  label: 'Watson chatbot'
+  label_display: '0'
+  provider: helfi_platform_config
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/vuokra-asunnot\r\n/vuokra-asunnot/hekan-vuokra-asunnot\r\n/vuokra-asunnot/vapaarahoitteiset-vuokra-asunnot\r\n/lyhytaikaiset-asunnot\r\n/lyhytaikaiset-asunnot/hae-lyhytaikaista-vuokra-asuntoa\r\n/tyosuhdeasunnot\r\n/tyosuhdeasunnot/hae-tyosuhdeasuntoa"
