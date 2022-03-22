@@ -3,8 +3,8 @@ _core:
 langcode: en
 site_settings:
   default_icon: home-smoke
-  theme_color: coat-of-arms
-  koro: basic
+  theme_color: bus
+  koro: pulse
 footer_settings:
   footer_color: dark
   footer_top_title: 'Contact us'
