@@ -1,13 +1,8 @@
-uuid: cbe90479-f438-4a7b-9bdc-c547e8bef5dd
 langcode: en
 status: true
 dependencies:
   module:
-    - helfi_api_base
-    - serialization
     - user
-_core:
-  default_config_hash: dzVTrmIL-p2ULabxQs_FbqNgAQ-GSPnFgfBMCz53MWg
 id: helfi_debug_package_version
 plugin_id: helfi_debug_package_version
 granularity: resource
