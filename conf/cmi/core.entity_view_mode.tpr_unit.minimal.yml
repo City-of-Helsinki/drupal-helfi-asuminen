@@ -1,0 +1,10 @@
+uuid: 42972ec0-6fa7-4757-92c6-b080f70b6ad9
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+id: tpr_unit.minimal
+label: Minimal
+targetEntityType: tpr_unit
+cache: true
