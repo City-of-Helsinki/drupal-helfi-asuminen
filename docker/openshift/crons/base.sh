@@ -22,6 +22,8 @@ exec "/crons/migrate-tpr.sh" &
 exec "/crons/purge-queue.sh" &
 # Uncomment this to enable automatic translation updates.
 exec "/crons/update-translations.sh" &
+# Uncomment this to enable content scheduler
+exec "/crons/content-scheduler.sh" &
 
 while true
 do
