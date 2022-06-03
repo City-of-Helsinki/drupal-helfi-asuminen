@@ -1,5 +1,5 @@
-# TASKNAME [UHF-0000](https://helsinkisolutionoffice.atlassian.net/browse/UHF-0000)
-<!-- A longer description of the task -->
+# [UHF-0000](https://helsinkisolutionoffice.atlassian.net/browse/UHF-0000)
+<!-- What problem does this solve? -->
 
 
 ## What was done
@@ -15,9 +15,10 @@
 * Run `make drush-cr`
 
 ## How to test
-<!-- Describe steps how to test the feature -->
+<!-- Describe steps how to test the features, add as many steps as you want to be tested -->
 
-* [ ] Check that this thing works
+* [ ] Check that this feature works
+* [ ] Check that code follows our standards
 
 ## Designers review
 <!-- One of the checkboxes below needs to be checked like this: `[x]` (or click when not in edit mode) -->
