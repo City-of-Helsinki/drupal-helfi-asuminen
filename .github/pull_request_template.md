@@ -1,7 +1,6 @@
 # [UHF-0000](https://helsinkisolutionoffice.atlassian.net/browse/UHF-0000)
 <!-- What problem does this solve? -->
 
-
 ## What was done
 <!-- Describe what was done -->
 
