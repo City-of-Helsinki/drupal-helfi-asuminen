@@ -49,6 +49,7 @@ settings:
       chart: chart
       contact_card_listing: contact_card_listing
       event_list: event_list
+      phasing: phasing
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -108,6 +109,12 @@ settings:
       map:
         weight: 31
         enabled: true
+      phasing:
+        weight: 50
+        enabled: true
+      phasing_item:
+        weight: 30
+        enabled: false
       remote_video:
         weight: 32
         enabled: true
