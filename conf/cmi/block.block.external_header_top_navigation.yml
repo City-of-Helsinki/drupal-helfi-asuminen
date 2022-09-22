@@ -2,8 +2,6 @@ uuid: 64f40dfa-64e9-4acd-bbe3-344cb3e0ee17
 langcode: en
 status: true
 dependencies:
-  config:
-    - header-top-navigation
   module:
     - helfi_navigation
   theme:
