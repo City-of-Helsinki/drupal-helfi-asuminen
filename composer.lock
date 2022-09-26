@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "806733a35500e40f5fb0a748ba188926",
+    "content-hash": "38fbf213b8fbacaa09999a9ee22b4d42",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4277,7 +4277,7 @@
         },
         {
             "name": "drupal/helfi_navigation",
-            "version": "dev-main",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-navigation.git",
@@ -4297,7 +4297,6 @@
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "drupal/coder": "^8.3"
             },
-            "default-branch": true,
             "type": "drupal-module",
             "license": [
                 "GPL-2.0-or-later"
@@ -16899,8 +16898,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/helfi_drupal_tools": 20,
-        "drupal/helfi_navigation": 20
+        "drupal/helfi_drupal_tools": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
