@@ -18,7 +18,7 @@ settings:
   label: 'Chat Leijuke Watson'
   label_display: '0'
   provider: helfi_platform_config
-  chat_title: Asunnonhakubotti
+  chat_title: 'Apartment search bot'
   chat_selection: watson_chatbot
 visibility:
   request_path:
