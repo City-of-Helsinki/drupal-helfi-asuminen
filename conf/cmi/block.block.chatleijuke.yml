@@ -1,4 +1,4 @@
-uuid: 14acbd92-cc28-46a1-8271-0db64c191e1b
+uuid: ae5d34cd-03ac-4602-8486-26c10e027974
 langcode: en
 status: true
 dependencies:
@@ -7,17 +7,19 @@ dependencies:
     - system
   theme:
     - hdbt
-id: watsonchatbot
+id: chatleijuke
 theme: hdbt
 region: attachments
 weight: 0
 provider: null
-plugin: watson_chatbot
+plugin: chat_leijuke
 settings:
-  id: watson_chatbot
-  label: 'Watson chatbot'
+  id: chat_leijuke
+  label: 'Chat Leijuke Watson'
   label_display: '0'
   provider: helfi_platform_config
+  chat_title: Asunnonhakubotti
+  chat_selection: watson_chatbot
 visibility:
   request_path:
     id: request_path
