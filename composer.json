@@ -97,6 +97,9 @@
         "patches": {
             "drupal/helfi_formtool_embed": {
                 "Custom patch to prevent login page from dying": "patches/formtoolembed.patch"
+            },
+            "drupal/helfi_helsinki_profiili": {
+                "Custom patch to prevent more errors": "patches/profiili.patch"
             }
         }
     },
