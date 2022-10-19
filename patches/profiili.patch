@@ -1,0 +1,22 @@
+diff --git a/src/HelsinkiProfiiliUserData.php b/src/HelsinkiProfiiliUserData.php
+index 0b47abe..a3114ac 100644
+--- a/src/HelsinkiProfiiliUserData.php
++++ b/src/HelsinkiProfiiliUserData.php
+@@ -107,14 +107,14 @@ class HelsinkiProfiiliUserData {
+ 
+     $hp_role_string = getenv('HP_USER_ROLES');
+     if (!empty($hp_role_string)) {
+-      $this->hpUserRoles = explode(',', $hp_role_string);
++      //$this->hpUserRoles = explode(',', $hp_role_string);
+     }
+     else {
+-      throw new ProfileDataException('Missing user roles.');
++      //throw new ProfileDataException('Missing user roles.');
+     }
+     $admin_role_string = getenv('ADMIN_USER_ROLES');
+     if (!empty($admin_role_string)) {
+-      $this->hpAdminRoles = explode(',', $admin_role_string);
++      //$this->hpAdminRoles = explode(',', $admin_role_string);
+     }
+     else {
+       $this->hpAdminRoles = [];
