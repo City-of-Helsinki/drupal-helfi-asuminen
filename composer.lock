@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65475c58abcc6d07d19c33233f62ec01",
+    "content-hash": "9d158a6e4f512fcb257b87d468e593fc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4179,19 +4179,18 @@
         },
         {
             "name": "drupal/helfi_formtool_embed",
-            "version": "dev-main",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-form-tool-embed.git",
-                "reference": "f921ac8691a57a428ecda897f857921abdec8f43"
+                "reference": "c0f724bff02ecf3e0d96f19e5df445d33ec49628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-form-tool-embed/zipball/f921ac8691a57a428ecda897f857921abdec8f43",
-                "reference": "f921ac8691a57a428ecda897f857921abdec8f43",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-form-tool-embed/zipball/c0f724bff02ecf3e0d96f19e5df445d33ec49628",
+                "reference": "c0f724bff02ecf3e0d96f19e5df445d33ec49628",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "drupal-module",
             "autoload": {
                 "psr-4": {
@@ -4203,10 +4202,10 @@
             ],
             "description": "Embed form tool to Drupal",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-form-tool-embed/tree/main",
+                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-form-tool-embed/tree/develop",
                 "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-form-tool-embed/issues"
             },
-            "time": "2022-05-10T08:03:32+00:00"
+            "time": "2022-06-17T11:35:49+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
