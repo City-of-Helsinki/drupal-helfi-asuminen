@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d158a6e4f512fcb257b87d468e593fc",
+    "content-hash": "eac491dddac07acb22794b6cdc55b6c8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4176,36 +4176,6 @@
                 "issues": "https://github.com/City-of-Helsinki/drupal-tools/issues"
             },
             "time": "2022-05-25T07:04:38+00:00"
-        },
-        {
-            "name": "drupal/helfi_formtool_embed",
-            "version": "dev-develop",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/City-of-Helsinki/drupal-module-helfi-form-tool-embed.git",
-                "reference": "c0f724bff02ecf3e0d96f19e5df445d33ec49628"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-module-helfi-form-tool-embed/zipball/c0f724bff02ecf3e0d96f19e5df445d33ec49628",
-                "reference": "c0f724bff02ecf3e0d96f19e5df445d33ec49628",
-                "shasum": ""
-            },
-            "type": "drupal-module",
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\HelfiFormtoolEmbed\\": "src/"
-                }
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Embed form tool to Drupal",
-            "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-module-helfi-form-tool-embed/tree/develop",
-                "issues": "https://github.com/City-of-Helsinki/drupal-module-helfi-form-tool-embed/issues"
-            },
-            "time": "2022-06-17T11:35:49+00:00"
         },
         {
             "name": "drupal/helfi_hauki",
@@ -16957,7 +16927,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/helfi_drupal_tools": 20,
-        "drupal/helfi_formtool_embed": 20,
         "drupal/helfi_helsinki_profiili": 20
     },
     "prefer-stable": true,
