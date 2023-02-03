@@ -1,0 +1,20 @@
+uuid: d40c4590-6857-4a43-bb66-e6ac9d3dd9d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: hPJQzln2lCxDafr1ScV1qrmPk0VLFLWnpa3D6OE_Ic4
+id: paragraph.field_free_events
+field_name: field_free_events
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
