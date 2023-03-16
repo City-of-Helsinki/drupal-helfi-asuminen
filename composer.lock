@@ -2203,16 +2203,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.5.4",
+            "version": "9.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "d48ad3173a39d6792e617f884fefe86c4bf41630"
+                "reference": "eae5e76a8b403cbd42b3465f567313b52d78b0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d48ad3173a39d6792e617f884fefe86c4bf41630",
-                "reference": "d48ad3173a39d6792e617f884fefe86c4bf41630",
+                "url": "https://api.github.com/repos/drupal/core/zipball/eae5e76a8b403cbd42b3465f567313b52d78b0dc",
+                "reference": "eae5e76a8b403cbd42b3465f567313b52d78b0dc",
                 "shasum": ""
             },
             "require": {
@@ -2364,9 +2364,9 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.5.4"
+                "source": "https://github.com/drupal/core/tree/9.5.5"
             },
-            "time": "2023-03-01T14:08:11+00:00"
+            "time": "2023-03-15T14:30:25+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
@@ -4298,16 +4298,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "2.18.3",
+            "version": "2.18.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "3b0dbdd7c447018bfee535d03cbb36a3efffa7a2"
+                "reference": "5deed4c697edfc1953b979c9b979de8d72687262"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/3b0dbdd7c447018bfee535d03cbb36a3efffa7a2",
-                "reference": "3b0dbdd7c447018bfee535d03cbb36a3efffa7a2",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/5deed4c697edfc1953b979c9b979de8d72687262",
+                "reference": "5deed4c697edfc1953b979c9b979de8d72687262",
                 "shasum": ""
             },
             "require": {
@@ -4419,10 +4419,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.18.3",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/2.18.4",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2023-03-14T12:44:02+00:00"
+            "time": "2023-03-16T08:12:10+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
