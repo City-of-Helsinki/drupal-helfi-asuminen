@@ -3,6 +3,8 @@ global-styling:
   css:
     theme:
       dist/css/styles.min.css: {}
+#     Uncomment following line to load custom svg icon styles.
+#     dist/css/hdbt-subtheme-icons.css: {}
 
 global-scripting:
   version: 1.x

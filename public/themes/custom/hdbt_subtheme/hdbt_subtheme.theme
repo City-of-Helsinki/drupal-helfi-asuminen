@@ -5,32 +5,15 @@
  * Functions to support theming in the HDBT Subtheme.
  */
 
-/**
- * Helper function to get the icons path.
- *
- * @return string|null
- *   Returns path for the icons SVG or null.
- */
-function hdbt_subtheme_get_icons_path() {
-  static $icon_path;
-  if (!isset($icon_path)) {
-    $theme_handler = \Drupal::service('theme_handler');
-    $icon_path = '/' . $theme_handler->getTheme('hdbt_subtheme')->getPath() . '/dist/icons/sprite.svg';
+declare(strict_types = 1);
 
-    // Add icons path as a global variable.
-    if (!empty($icon_path)) {
-      return $icon_path;
-    }
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function hdbt_subtheme_preprocess_block(&$variables) {
+  if (isset($variables['elements']['#id'])) {
+    $variables['content']['#attributes']['block_id'] = $variables['elements']['#id'];
   }
-  return $icon_path;
-}
-
-/**
- * Implements hook_preprocess().
- */
-function hdbt_subtheme_preprocess(&$variables) {
-  $variables['hdbt_subtheme_icons_path'] = hdbt_subtheme_get_icons_path();
-  $variables['#attached']['drupalSettings']['hdbtSubthemeIconsPath'] = $variables['hdbt_subtheme_icons_path'];
 }
 
 /**
@@ -40,5 +23,22 @@ function hdbt_subtheme_theme_suggestions_block_alter(&$suggestions) {
   // Load theme suggestions for blocks from parent theme.
   foreach ($suggestions as &$suggestion) {
     $suggestion = str_replace('hdbt_subtheme_', '', $suggestion);
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter().
+ */
+function hdbt_subtheme_theme_suggestions_menu_alter(&$suggestions, $variables) {
+  if (isset($variables['attributes']['block_id'])) {
+    $block_id = str_replace('hdbt_subtheme_', '', $variables['attributes']['block_id']);
+
+    $suggestions[] = match ($block_id) {
+      'mobile_navigation' => 'menu__mobile',
+      'mainnavigation' => 'menu__main__desktop',
+      'main_navigation_level_2' => 'menu__main__sidebar',
+      'brandingnavigation' => 'menu__main__branding',
+      default => 'menu__' . $variables['attributes']['block_id'],
+    };
   }
 }
