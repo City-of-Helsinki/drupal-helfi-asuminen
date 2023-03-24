@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40cd0219ec49e5bc499934b4b477c8af",
+    "content-hash": "6924eda0fe8b651707e8b77260d88491",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3990,7 +3990,7 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "3.x-dev",
+            "version": "3.0.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
@@ -17672,8 +17672,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/helfi_drupal_tools": 20,
-        "drupal/helfi_platform_config": 20
+        "drupal/helfi_drupal_tools": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
