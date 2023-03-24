@@ -1,7 +1,10 @@
 uuid: edb389cb-048b-4308-b85a-561f463b122a
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  enforced:
+    config:
+      - paragraphs.paragraphs_type.list_of_links
 _core:
   default_config_hash: JJbV-c48oaLAnXbQQmvKk3j5QaOWCX84DFicAqITi68
 id: list_of_links_item

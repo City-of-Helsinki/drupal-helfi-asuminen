@@ -1,0 +1,20 @@
+uuid: 7709a101-ec0a-4c9f-bbf8-1b9e3267b19f
+langcode: en
+status: true
+dependencies:
+  module:
+    - helfi_tpr
+    - taxonomy
+id: tpr_unit.field_districts
+field_name: field_districts
+entity_type: tpr_unit
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
