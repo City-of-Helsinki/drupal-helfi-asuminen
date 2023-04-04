@@ -5,6 +5,8 @@ dependencies:
   module:
     - helfi_tpr
     - user
+_core:
+  default_config_hash: rO8m-2SU4UjJoGRHWn5CfFPKwy59J2U_J0xJq6MZpjA
 id: tpr_service_list
 label: 'TPR service list'
 module: views
