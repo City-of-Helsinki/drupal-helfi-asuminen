@@ -1,6 +1,6 @@
 footer_settings:
   footer_color: dark
 site_settings:
-  theme_color: bus
   default_icon: home-smoke
+  theme_color: bus
   koro: pulse
