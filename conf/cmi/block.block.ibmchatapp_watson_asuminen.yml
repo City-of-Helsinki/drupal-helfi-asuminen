@@ -20,7 +20,7 @@ settings:
   provider: helfi_platform_config
   hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
   engagementId: housing
-  tenantId: 'www-hel-fi- prod'
+  tenantId: 'www-hel-fi-prod'
   assistantId: housing
 visibility:
   request_path:
