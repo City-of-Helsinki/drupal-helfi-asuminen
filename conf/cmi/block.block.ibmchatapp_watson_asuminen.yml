@@ -1,25 +1,27 @@
-uuid: ae5d34cd-03ac-4602-8486-26c10e027974
+uuid: 69932451-ccaa-4586-bfa3-7873e30a42b0
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - helfi_platform_config
     - system
   theme:
     - hdbt
-id: chatleijuke
+id: ibmchatapp_watson_asuminen
 theme: hdbt
 region: attachments
 weight: 0
 provider: null
-plugin: chat_leijuke
+plugin: ibm_chat_app
 settings:
-  id: chat_leijuke
-  label: 'Chat Leijuke Watson'
+  id: ibm_chat_app
+  label: 'IBM Chat App Watson - Asuminen'
   label_display: '0'
   provider: helfi_platform_config
-  chat_title: 'Apartment search bot'
-  chat_selection: watson_chatbot
+  hostname: 'https://coh-chat-app-prod.ow6i4n9pdzm.eu-de.codeengine.appdomain.cloud'
+  engagementId: housing
+  tenantId: 'www-hel-fi-prod'
+  assistantId: housing
 visibility:
   request_path:
     id: request_path
