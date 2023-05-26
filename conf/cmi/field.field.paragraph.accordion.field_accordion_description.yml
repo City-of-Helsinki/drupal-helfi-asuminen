@@ -13,7 +13,7 @@ third_party_settings:
     allowed_formats:
       - minimal
 _core:
-  default_config_hash: uEzIGn1KjuoCPFcfNHwUWo6FjkliBTZwezT6I1rX2nk
+  default_config_hash: gVzq6qdbsUyvmWQ8IChMyCFTZU-X4iYXHPs6DJJhHeg
 id: paragraph.accordion.field_accordion_description
 field_name: field_accordion_description
 entity_type: paragraph

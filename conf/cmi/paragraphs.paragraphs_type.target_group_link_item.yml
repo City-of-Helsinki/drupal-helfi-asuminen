@@ -2,6 +2,8 @@ uuid: 68410a85-4250-4e69-8a4f-e3dc0d1eead1
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: aixTW0IQXgEhIBAe4jRY6oJl5YFBMi7tNCNQtoOWge4
 id: target_group_link_item
 label: 'Target group link item'
 icon_uuid: null
