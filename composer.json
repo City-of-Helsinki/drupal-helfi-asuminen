@@ -22,7 +22,7 @@
         "drupal/helfi_tunnistamo": "^2.0",
         "drupal/raven": "^4.0",
         "drupal/redis": "^1.5",
-        "drupal/stage_file_proxy": "^2.0",
+        "drupal/stage_file_proxy": "^1.0",
         "drush/drush": "^11"
     },
     "require-dev": {
@@ -47,7 +47,8 @@
             "composer/installers": true,
             "cweagans/composer-patches": true,
             "phpstan/extension-installer": true,
-            "drupal/core-composer-scaffold": true
+            "drupal/core-composer-scaffold": true,
+            "php-http/discovery": false
         }
     },
     "extra": {
