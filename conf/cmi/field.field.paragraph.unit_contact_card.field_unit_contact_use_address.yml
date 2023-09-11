@@ -1,0 +1,25 @@
+uuid: c9dc3508-baca-43d9-9f33-57ea850c41f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_unit_contact_use_address
+    - paragraphs.paragraphs_type.unit_contact_card
+_core:
+  default_config_hash: iLunbVe1WwilCBd7ga4v1cMXJVMBff5W71TtUaGBFMY
+id: paragraph.unit_contact_card.field_unit_contact_use_address
+field_name: field_unit_contact_use_address
+entity_type: paragraph
+bundle: unit_contact_card
+label: 'Show address'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
