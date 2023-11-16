@@ -23,7 +23,7 @@ display:
       arguments:
         tid:
           exception:
-            title: Kaikki
+            title: All
   feed_1:
     display_title: Syöte
   page_1:

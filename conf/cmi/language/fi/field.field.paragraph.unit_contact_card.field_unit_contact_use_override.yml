@@ -1,1 +1,4 @@
 label: 'Suosi ylikirjoituskuvaa'
+settings:
+  on_label: 'On'
+  off_label: 'Off'
