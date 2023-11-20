@@ -31,11 +31,11 @@ display:
       arguments:
         id:
           exception:
-            title: All
+            title: Kaikki
   block:
-    display_title: Block
+    display_title: Lohko
   block_search:
-    display_title: Block
+    display_title: Lohko
     display_options:
       fields:
         name:
@@ -67,7 +67,7 @@ display:
       arguments:
         id_or_service_id:
           exception:
-            title: All
+            title: Kaikki
       filters:
         combine:
           expose:

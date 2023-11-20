@@ -81,7 +81,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: All
+            title: Kaikki
       filters:
         name:
           expose:
@@ -106,7 +106,7 @@ display:
       arguments:
         bundle:
           exception:
-            title: All
+            title: Kaikki
       filters:
         name:
           expose:

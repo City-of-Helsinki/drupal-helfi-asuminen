@@ -44,4 +44,4 @@ display:
           expose:
             label: Otsikko
   locked_services_block:
-    display_title: Block
+    display_title: Lohko
