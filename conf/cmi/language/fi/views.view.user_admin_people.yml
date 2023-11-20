@@ -2,7 +2,7 @@ label: Käyttäjät
 description: 'Etsi ja hallinnoi sivustoasi käyttäviä ihmisiä.'
 display:
   default:
-    display_title: Default
+    display_title: Oletus
     display_options:
       title: Käyttäjät
       fields:
@@ -21,6 +21,8 @@ display:
           label: 'Käyttäjä jo'
         access:
           label: 'Viimeksi paikalla'
+          settings:
+            past_format: '@interval ago'
         operations:
           label: Toimenpiteet
         mail:

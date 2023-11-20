@@ -1,6 +1,10 @@
 display:
   default:
+    display_title: Förvald
     display_options:
+      fields:
+        name:
+          separator: ', '
       pager:
         options:
           tags:
@@ -8,18 +12,73 @@ display:
             previous: Föregående
             first: Första
             last: Sista
-  block_search:
-    display_options:
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
       exposed_form:
         options:
-          submit_button: Sök
+          submit_button: Verkställ
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      empty:
+        area:
+          content:
+            value: 'Inget resultat'
+      arguments:
+        id:
+          exception:
+            title: Alla
+  block:
+    display_title: Block
+  block_search:
+    display_title: Block
+    display_options:
+      fields:
+        name:
+          separator: ', '
+        name_synonyms:
+          separator: ', '
+        description__summary:
+          separator: ', '
+        name_override:
+          separator: ', '
       pager:
         options:
           tags:
-            previous: Tidigare
             next: Nästa
+            previous: Föregående
+            first: Första
+            last: Sista
+          expose:
+            items_per_page_label: 'Inlägg per sida'
+            items_per_page_options_all_label: '- Alla -'
+            offset_label: Kompensera
+      exposed_form:
+        options:
+          submit_button: Sök
+          reset_button_label: Återställ
+          exposed_sorts_label: 'Sortera efter'
+          sort_asc_label: Stigande
+          sort_desc_label: Fallande
+      arguments:
+        id_or_service_id:
+          exception:
+            title: Alla
       filters:
         combine:
           expose:
             label: 'Rådgivningstjänstens namn eller sökterm'
             placeholder: 't.ex. Socialrådgivning, hälsa eller digitalt Sök'
+  entity_reference_1:
+    display_title: Objektsreferens
+    display_options:
+      fields:
+        name_override:
+          separator: ', '
+        id:
+          separator: ', '
+        name:
+          separator: ', '
