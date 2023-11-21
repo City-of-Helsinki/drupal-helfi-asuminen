@@ -1,1 +1,4 @@
 label: 'Näytä puhelinnumero'
+settings:
+  on_label: Käytössä
+  off_label: 'Pois päältä'
