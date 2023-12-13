@@ -1,4 +1,6 @@
 site_settings:
-  default_icon: home-smoke
   theme_color: bus
+  default_icon: abstract-1
   koro: pulse
+footer_settings:
+  footer_color: dark
