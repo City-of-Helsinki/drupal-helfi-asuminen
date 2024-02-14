@@ -10,11 +10,11 @@ $config['openid_connect.client.tunnistamo']['settings']['ad_roles'] = [
     'roles' => ['admin'],
   ],
   [
-    'ad_role' => 'Drupal_Helfi_Kaupunkiymp_ja_liikenne_sisallontuottajat_laaja',
+    'ad_role' => 'Drupal_Helfi_Asuminen_sisallontuottajat_laaja',
     'roles' => ['editor'],
   ],
   [
-    'ad_role' => 'Drupal_Helfi_Kaupunkiymp_ja_liikenne_sisallontuottajat_suppea',
+    'ad_role' => 'Drupal_Helfi_Asuminen_sisallontuottajat_suppea',
     'roles' => ['content_producer'],
   ],
 ];
