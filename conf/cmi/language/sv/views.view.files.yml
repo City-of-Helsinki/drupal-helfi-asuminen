@@ -28,6 +28,7 @@ display:
           label: 'Används i'
           alter:
             path: 'admin/content/files/usage/{{ fid }}'
+          format_plural_string: !!binary MSBwbGFjZQNAY291bnQgcGxhY2Vz
       pager:
         options:
           tags:
@@ -75,6 +76,7 @@ display:
           label: 'Registrerar modul'
         count:
           label: 'Antal använd'
+          format_plural_string: !!binary MQNAY291bnQ=
       pager:
         options:
           tags:
