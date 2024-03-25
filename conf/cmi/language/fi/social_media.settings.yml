@@ -18,6 +18,6 @@ social_media:
   whatsapp:
     attributes: "class|whatsapp show-for-small-only\r\ndata-action|share/whatsapp/share"
   email:
-    text: 'Lähetä sivu sähköpostitse'
+    text: Sähköposti
   print:
     text: Print
