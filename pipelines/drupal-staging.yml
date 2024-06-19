@@ -1,13 +1,16 @@
 # Continuous integration (CI) triggers cause a pipeline to run whenever you push
 # an update to the specified branches or you push specified tags.
-trigger: none
-#   batch: true
-#   branches:
-#     include:
-#       - main
-#   paths:
-#     exclude:
-#       - README.md
+trigger:
+  batch: true
+  branches:
+    include:
+      - main
+  paths:
+    exclude:
+    - '*.md'
+    - '.github/'
+    - 'pipelines/drupal-production.yml'
+    - 'pipelines/drupal-test.yml'
 
 # Pull request (PR) triggers cause a pipeline to run whenever a pull request is
 # opened with one of the specified target branches, or when updates are made to
@@ -23,13 +26,6 @@ pr: none
 # By default, use self-hosted agents
 pool: Default
 
-# Image tag name for Fuse projects
-#parameters:
-#- name: imagetag
-#  displayName: Image tag to be built and/or deployed
-#  type: string
-#  default: latest
-
 resources:
   repositories:
     # Azure DevOps repository
@@ -39,9 +35,13 @@ resources:
       name: asuminen/asuminen-pipelines
 
 extends:
-  # Filename in Azure DevOps Repository (note possible -ui or -api)
-  # Django example: azure-pipelines-PROJECTNAME-api-release.yml
-  # Drupal example: azure-pipelines-drupal-release.yml
-  template: azure-pipelines-asuminen-prod.yml@asuminen-pipelines
-  #parameters:
-  #imagetag: ${{ parameters.imagetag }}
+  # Filename in Azure DevOps Repository
+  template: components/drupal/pipelines/drupal-staging.yml@asuminen-pipelines
+  # parameters:
+    # Application build arguments and config map values as key value pairs.
+    # Does not contain all buildArguments or configMap values, the rest located in asuminen-pipelines
+    # The values here will override the values defined in the asuminen-pipelines repository
+    # buildArgs:
+    #   DEBUG: 1
+    # configMap: # pod environment variables
+    #   DEBUG: 1
