@@ -44,5 +44,5 @@ extends:
   # Drupal example: azure-pipelines-drupal-master.yml
   template: azure-pipelines-asuminen-devtest.yml@asuminen-pipelines
   # Image tag name for Fuse projects
-  #parameters:
-  #imagetag: ${{ parameters.imagetag }}
+  # parameters:
+  # imagetag: ${{ parameters.imagetag }}
