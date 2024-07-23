@@ -43,4 +43,4 @@ $ make shell
 
 ## Site specific features
 
-Asuminen has no site specific features.
+Asuminen has no instance specific features.
