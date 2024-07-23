@@ -1,11 +1,13 @@
 # City of Helsinki - Asuminen Drupal 9 project
 
+Asuminen instance is the site for information related to living accommodations.
+
 ## Environments
 
 Env | Branch | Drush alias | URL
 --- | ------ | ----------- | ---
 development | * | - | http://helfi-asuminen.docker.so/
-production | main | @main | TBD
+production | main | @main | https://hel.fi/fi/asuminen
 
 ## Requirements
 
@@ -38,3 +40,7 @@ This will log you inside the app container:
 ```
 $ make shell
 ```
+
+## Site specific features
+
+Asuminen has no site specific features.
