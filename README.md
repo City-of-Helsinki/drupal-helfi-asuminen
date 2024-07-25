@@ -43,4 +43,7 @@ $ make shell
 
 ## Site specific features
 
-Asuminen has no instance specific features.
+
+### Watson chat
+
+Asuminen has watson chatbot on multiple pages. Chat implementations have plenty of documentation elsewhere
