@@ -1,6 +1,6 @@
-# City of Helsinki - Asuminen Drupal 9 project
+# City of Helsinki - Asuminen Drupal project
 
-Asuminen instance is the site for information related to living accommodations.
+The Asuminen instance provides information related to living accommodations in Helsinki.
 
 ## Environments
 
@@ -43,7 +43,8 @@ $ make shell
 
 ## Site specific features
 
+### IBM Watson chat
 
-### Watson chat
-
-Asuminen has watson chatbot on multiple pages. Chat implementations have plenty of documentation elsewhere
+The Asuminen site features the IBM Watson Chatbot on multiple pages. You can configure the chatbot on the block layout
+page (`admin/structure/block`). More documentation about the chatbot is available in [Confluence](https://helsinkisolutionoffice.atlassian.net/wiki/spaces/HEL/pages/8145469986/IBM+Chat+App+Drupal+integration),
+and the code for the Drupal block can be found [here](https://github.com/City-of-Helsinki/drupal-helfi-platform-config/blob/main/src/Plugin/Block/IbmChatApp.php).
