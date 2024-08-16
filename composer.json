@@ -22,7 +22,6 @@
         "drupal/helfi_tunnistamo": "^3.0",
         "drupal/raven": "^5.0",
         "drupal/redis": "^1.5",
-        "drupal/stage_file_proxy": "^1.0",
         "drush/drush": "^12.0"
     },
     "require-dev": {
