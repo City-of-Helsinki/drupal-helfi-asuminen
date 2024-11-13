@@ -6872,17 +6872,17 @@
         },
         {
             "name": "drupal/stomp",
-            "version": "2.0.0-alpha4",
+            "version": "2.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/stomp.git",
-                "reference": "2.0.0-alpha4"
+                "reference": "2.0.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/stomp-2.0.0-alpha4.zip",
-                "reference": "2.0.0-alpha4",
-                "shasum": "624db88867009eab5da9ccc259a396eb79927809"
+                "url": "https://ftp.drupal.org/files/projects/stomp-2.0.0-alpha5.zip",
+                "reference": "2.0.0-alpha5",
+                "shasum": "5f904047325f8f55674c77e16f61a4807cb51f7e"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -6895,18 +6895,18 @@
             "require-dev": {
                 "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
                 "drupal/coder": "^8.3",
-                "drush/drush": "^11.6 || ^12",
+                "drush/drush": "^11.6 || ^12 || ^13",
                 "jangregor/phpstan-prophecy": "dev-master",
                 "mglaman/phpstan-drupal": "^1.2",
                 "phpstan/extension-installer": "^1.3",
-                "phpstan/phpstan": "1.11.x-dev",
-                "phpstan/phpstan-deprecation-rules": "1.2.x-dev"
+                "phpstan/phpstan": "^1.9",
+                "phpstan/phpstan-deprecation-rules": "^1.1"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha4",
-                    "datestamp": "1711347968",
+                    "version": "2.0.0-alpha5",
+                    "datestamp": "1731482648",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -19387,7 +19387,7 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }
