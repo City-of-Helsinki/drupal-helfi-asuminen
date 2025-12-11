@@ -9,7 +9,7 @@ dependencies:
     - helfi_recommendations
     - helfi_tpr
 _core:
-  default_config_hash: H4ELmk2b4nXnVuXM2qvPGFrHYQtp0dOwCgi5VNo0Mk8
+  default_config_hash: REhny8AEeTXNjPeWNzcVtGRrXaAqwyurfGOn8c75TiU
 id: hyte
 name: Hyte
 description: ''
