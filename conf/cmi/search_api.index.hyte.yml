@@ -9,7 +9,7 @@ dependencies:
     - helfi_recommendations
     - helfi_tpr
 _core:
-  default_config_hash: REhny8AEeTXNjPeWNzcVtGRrXaAqwyurfGOn8c75TiU
+  default_config_hash: '--67yhIndfukhW2Uno_nff4c8aPNCNWsjIFD5PM6OUY'
 id: hyte
 name: Hyte
 description: ''
@@ -119,4 +119,5 @@ options:
   delete_on_fail: true
   index_directly: true
   track_changes_in_references: true
+  helfi_platform_config_multisite: true
 server: etusivu
