@@ -4357,16 +4357,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.16.70",
+            "version": "6.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "b30aa236a9a992b9f53adfb0bd72e25fcb0c7d94"
+                "reference": "2dec708474d0468c03b8f4c4e4cc829f3c15b5cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/b30aa236a9a992b9f53adfb0bd72e25fcb0c7d94",
-                "reference": "b30aa236a9a992b9f53adfb0bd72e25fcb0c7d94",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/2dec708474d0468c03b8f4c4e4cc829f3c15b5cc",
+                "reference": "2dec708474d0468c03b8f4c4e4cc829f3c15b5cc",
                 "shasum": ""
             },
             "require": {
@@ -4385,10 +4385,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.16.70",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.17.0",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2026-04-21T07:27:59+00:00"
+            "time": "2026-04-22T12:51:29+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -4696,16 +4696,16 @@
         },
         {
             "name": "drupal/helfi_platform_config",
-            "version": "5.1.42",
+            "version": "5.1.44",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config.git",
-                "reference": "90ea1221ee2bb76d7bf4966d0888ed876809cce4"
+                "reference": "6796e6e6a6dd0d6b12e7e789ed458f78a5b5715a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/90ea1221ee2bb76d7bf4966d0888ed876809cce4",
-                "reference": "90ea1221ee2bb76d7bf4966d0888ed876809cce4",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-helfi-platform-config/zipball/6796e6e6a6dd0d6b12e7e789ed458f78a5b5715a",
+                "reference": "6796e6e6a6dd0d6b12e7e789ed458f78a5b5715a",
                 "shasum": ""
             },
             "require": {
@@ -4783,6 +4783,7 @@
             "extra": {
                 "patches": {
                     "drupal/core": {
+                        "[#UHF-13177, #3569803] htmx:beforeSwap fails with TypeError requestAssetsLoaded.get(...) is undefined": "./public/modules/contrib/helfi_platform_config/patches/3569803.patch",
                         "[#UHF-12709] Patch 'Deleted and replaced ...' error messages": "./public/modules/contrib/helfi_platform_config/patches/UHF-12709-skip_deleted_and_replaced_log.patch",
                         "[#UHF-181] Hide untranslated menu links (https://www.drupal.org/project/drupal/issues/3091246)": "./public/modules/contrib/helfi_platform_config/patches/3091246.patch",
                         "[#UHF-3812] Ajax exposed filters not working for multiple instances of the same Views block placed on one page (https://www.drupal.org/project/drupal/issues/3163299)": "./public/modules/contrib/helfi_platform_config/patches/3163299-104-D10.patch",
@@ -4821,10 +4822,10 @@
             ],
             "description": "HELfi platform config",
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.42",
+                "source": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/tree/5.1.44",
                 "issues": "https://github.com/City-of-Helsinki/drupal-helfi-platform-config/issues"
             },
-            "time": "2026-04-21T10:23:14+00:00"
+            "time": "2026-04-23T12:10:17+00:00"
         },
         {
             "name": "drupal/helfi_proxy",
@@ -7459,17 +7460,17 @@
         },
         {
             "name": "drupal/twig_tweak",
-            "version": "3.4.1",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/twig_tweak.git",
-                "reference": "3.4.1"
+                "reference": "3.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.4.1.zip",
-                "reference": "3.4.1",
-                "shasum": "ceaa5ea8f357ce8827c728f22871265f0f7cd74f"
+                "url": "https://ftp.drupal.org/files/projects/twig_tweak-3.4.2.zip",
+                "reference": "3.4.2",
+                "shasum": "c31272a550c05981ca21b1eacc37abfe62cf2598"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11.0",
@@ -7483,8 +7484,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.4.1",
-                    "datestamp": "1748530577",
+                    "version": "3.4.2",
+                    "datestamp": "1776781834",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7504,10 +7505,6 @@
                 {
                     "name": "anybody",
                     "homepage": "https://www.drupal.org/user/291091"
-                },
-                {
-                    "name": "chesn0k",
-                    "homepage": "https://www.drupal.org/user/3650191"
                 },
                 {
                     "name": "chi",
