@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.banner
     - paragraphs.paragraphs_type.chart
+    - paragraphs.paragraphs_type.chartjs_chart
     - paragraphs.paragraphs_type.columns
     - paragraphs.paragraphs_type.contact_card_listing
     - paragraphs.paragraphs_type.content_cards
@@ -60,6 +61,7 @@ settings:
       news_list: news_list
       image_gallery: image_gallery
       number_highlights: number_highlights
+      chartjs_chart: chartjs_chart
       service_list_search: service_list_search
       unit_search: unit_search
       unit_contact_card: unit_contact_card
@@ -73,6 +75,9 @@ settings:
         enabled: true
       chart:
         weight: 11
+        enabled: true
+      chartjs_chart:
+        weight: 18
         enabled: true
       columns:
         weight: 6

@@ -24,6 +24,12 @@ targetEntityType: tpr_service
 bundle: tpr_service
 mode: default
 content:
+  ai_summary:
+    type: ai_summary
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   description:
     type: readonly_field_widget
     weight: 6
@@ -241,12 +247,6 @@ content:
     third_party_settings: {  }
   translation:
     weight: 5
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  ai_summary:
-    type: ai_summary
-    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
