@@ -1,16 +1,13 @@
-DEFAULT_NODE_VERSION ?= 24
+DEFAULT_NODE_VERSION ?= 20
 NODE_DOCKER_RUN_EXTRA_ARGS ?= -it
 
 ifeq ($(CI),true)
 	NODE_DOCKER_RUN_EXTRA_ARGS =
 endif
 
-# Install npm 12 before the install command.
-NPM_12 = npm install --global npm@12 --no-audit --no-fund --loglevel=error
-
 PHONY += install-hdbt-subtheme
 install-hdbt-subtheme: ## Installs dependencies for HDBT subtheme
-	$(call node,/public/themes/custom/hdbt_subtheme,"sh -c '$(NPM_12) && npm install'")
+	$(call node,/public/themes/custom/hdbt_subtheme,"npm install")
 
 PHONY += build-hdbt-subtheme
 build-hdbt-subtheme: ## Builds SCSS/JS assets for HDBT subtheme
@@ -22,7 +19,7 @@ watch-hdbt-subtheme: ## Starts SCSS/JS watcher for HDBT subtheme
 
 PHONY += install-hdbt
 install-hdbt: ## Installs dependencies for HDBT theme
-	$(call node,/public/themes/contrib/hdbt,"sh -c '$(NPM_12) && npm install'")
+	$(call node,/public/themes/contrib/hdbt,"npm install")
 
 PHONY += build-hdbt
 build-hdbt: ## Builds SCSS/JS assets for HDBT theme
@@ -34,7 +31,7 @@ watch-hdbt: ## Starts SCSS/JS watcher for HDBT theme
 
 PHONY += install-hdbt-admin
 install-hdbt-admin: ## Installs dependencies for HDBT Admin theme
-	$(call node,/public/themes/contrib/hdbt_admin,"sh -c '$(NPM_12) && npm install'")
+	$(call node,/public/themes/contrib/hdbt_admin,"npm install")
 
 PHONY += build-hdbt-admin
 build-hdbt-admin: ## Builds SCSS/JS assets for HDBT Admin theme
