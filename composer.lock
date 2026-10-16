@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "80e820b9f16c4146d53c2ba1420b7e09",
+    "content-hash": "6910cbd0d7f9d68b884b4ffd6c59a3cc",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -4954,16 +4954,16 @@
         },
         {
             "name": "drupal/hdbt",
-            "version": "6.20.2",
+            "version": "dev-UHF-13657",
             "source": {
                 "type": "git",
                 "url": "https://github.com/City-of-Helsinki/drupal-hdbt.git",
-                "reference": "9c40cb102d76491d68aabc279373a9f0e36714b3"
+                "reference": "100160f1df51b5096d8d9e5ec463302c37509737"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/9c40cb102d76491d68aabc279373a9f0e36714b3",
-                "reference": "9c40cb102d76491d68aabc279373a9f0e36714b3",
+                "url": "https://api.github.com/repos/City-of-Helsinki/drupal-hdbt/zipball/100160f1df51b5096d8d9e5ec463302c37509737",
+                "reference": "100160f1df51b5096d8d9e5ec463302c37509737",
                 "shasum": ""
             },
             "require": {
@@ -4982,10 +4982,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/6.20.2",
+                "source": "https://github.com/City-of-Helsinki/drupal-hdbt/tree/UHF-13657",
                 "issues": "https://github.com/City-of-Helsinki/drupal-hdbt/issues"
             },
-            "time": "2026-10-15T08:50:08+00:00"
+            "time": "2026-10-16T13:46:47+00:00"
         },
         {
             "name": "drupal/hdbt_admin",
@@ -23317,6 +23317,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/hdbt": 20,
         "drupal/helfi_drupal_tools": 20
     },
     "prefer-stable": true,
