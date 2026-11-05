@@ -23,6 +23,7 @@ dependencies:
     - filter
     - helfi_api_base
     - helfi_tpr
+    - helfi_users
     - media
     - menu_link_content
     - node
@@ -30,6 +31,7 @@ dependencies:
     - paragraphs_library
     - path
     - publication_date
+    - quick_node_clone
     - scheduler
     - system
     - taxonomy
@@ -57,6 +59,8 @@ permissions:
   - 'administer paragraphs library'
   - 'cancel account'
   - 'change own username'
+  - 'clone landing_page content'
+  - 'clone page content'
   - 'create announcement content'
   - 'create file media'
   - 'create hel_map media'
@@ -130,6 +134,7 @@ permissions:
   - 'update media'
   - 'update own tpr_service'
   - 'update own tpr_unit'
+  - 'use favorites'
   - 'use text format full_html'
   - 'use text format minimal'
   - 'view all media revisions'

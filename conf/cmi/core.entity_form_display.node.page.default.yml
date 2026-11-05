@@ -10,7 +10,6 @@ dependencies:
     - field.field.node.page.field_liftup_image
     - field.field.node.page.field_lower_content
     - field.field.node.page.field_metatags
-    - field.field.node.page.field_sidebar_content
     - node.type.page
   module:
     - hdbt_admin_tools
@@ -22,7 +21,7 @@ dependencies:
     - publication_date
     - scheduler
 _core:
-  default_config_hash: 1c66UJvkqgUlwTKKPGactcR0FjaLLXJZq9ZHP_M24ao
+  default_config_hash: AQne4SDWIRl9HSyhJY9lBXfjzJhI_hq9nOGEahNz-1U
 id: node.page.default
 targetEntityType: node
 bundle: page
@@ -36,7 +35,7 @@ content:
     third_party_settings: {  }
   field_content:
     type: paragraphs
-    weight: 14
+    weight: 15
     region: content
     settings:
       title: Paragraph
@@ -98,7 +97,7 @@ content:
     third_party_settings: {  }
   field_lower_content:
     type: paragraphs
-    weight: 20
+    weight: 21
     region: content
     settings:
       title: Paragraph
@@ -123,28 +122,9 @@ content:
       sidebar: false
       use_details: true
     third_party_settings: {  }
-  field_sidebar_content:
-    type: paragraphs
-    weight: 15
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: _none
-      features:
-        add_above: '0'
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
-    third_party_settings: {  }
   hide_sidebar_navigation:
     type: boolean_checkbox
-    weight: 21
+    weight: 22
     region: content
     settings:
       display_label: true
@@ -171,7 +151,7 @@ content:
     third_party_settings: {  }
   publish_on:
     type: datetime_timestamp_no_default
-    weight: 17
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -182,7 +162,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   scheduler_settings:
-    weight: 16
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -232,14 +212,19 @@ content:
     third_party_settings: {  }
   unpublish_on:
     type: datetime_timestamp_no_default
-    weight: 18
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  url_redirects:
     weight: 19
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden:
-  ai_summary: true
+  url_redirects:
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  ai_summary:
+    type: ai_summary
+    weight: 14
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

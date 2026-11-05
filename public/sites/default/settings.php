@@ -1,5 +1,6 @@
 <?php
 
+use Symfony\Component\HttpFoundation\IpUtils;
 use Symfony\Component\HttpFoundation\Request;
 
 if (PHP_SAPI === 'cli') {
@@ -116,16 +117,24 @@ $settings['file_temp_path'] = getenv('DRUPAL_TMP_PATH') ?: '/tmp';
 
 if ($reverse_proxy_address = getenv('DRUPAL_REVERSE_PROXY_ADDRESS')) {
   $reverse_proxy_address = explode(',', $reverse_proxy_address);
+  $reverse_proxy_trusted_headers = Request::HEADER_X_FORWARDED_HOST | Request::HEADER_X_FORWARDED_PORT | Request::HEADER_X_FORWARDED_PROTO;
 
-  if (isset($_SERVER['REMOTE_ADDR'])) {
+  if ($remote_address = filter_input(INPUT_SERVER, 'REMOTE_ADDR', FILTER_VALIDATE_IP)) {
     // The application sits behind multiple proxies in the OpenShift
     // environment. The nginx configuration uses ngx_http_realip_module to
     // set the correct headers for Drupal.
-    $reverse_proxy_address[] = $_SERVER['REMOTE_ADDR'];
+    $reverse_proxy_address[] = $remote_address;
+
+    // Without an internal proxy, like Varnish, in front of nginx, the remote
+    // address is already the client's IP and the rest of X-Forwarded-For
+    // comes from the client, so it can't be trusted.
+    if (IpUtils::checkIp($remote_address, IpUtils::PRIVATE_SUBNETS)) {
+      $reverse_proxy_trusted_headers |= Request::HEADER_X_FORWARDED_FOR;
+    }
   }
   $settings['reverse_proxy'] = TRUE;
   $settings['reverse_proxy_addresses'] = $reverse_proxy_address;
-  $settings['reverse_proxy_trusted_headers'] = Request::HEADER_X_FORWARDED_FOR | Request::HEADER_X_FORWARDED_HOST | Request::HEADER_X_FORWARDED_PORT | Request::HEADER_X_FORWARDED_PROTO;
+  $settings['reverse_proxy_trusted_headers'] = $reverse_proxy_trusted_headers;
   $settings['reverse_proxy_host_header'] = 'X_FORWARDED_HOST';
 }
 
@@ -150,6 +159,7 @@ if ($blob_storage_name = getenv('AZURE_BLOB_STORAGE_NAME')) {
         'endpointSuffix' => 'core.windows.net',
         'protocol' => 'https',
       ],
+      'cache' => TRUE,
     ],
   ];
   $config['helfi_azure_fs.settings']['use_blob_storage'] = TRUE;
@@ -381,35 +391,10 @@ if (getenv('OPENAI_KEY')) {
   $config['helfi_search.settings']['openai_model'] = getenv('OPENAI_MODEL');
 }
 
-// Azure OpenAI for Drupal AI module (ai_provider_azure).
-// API key is managed by the Key module entity 'helfi_azure_openai' which reads
-// AZURE_OPENAI_API_KEY from the environment directly.
-// See: https://helsinkisolutionoffice.atlassian.net/browse/UHF-13110.
-$azure_openai_tiers = [
-  'default' => ['AZURE_OPENAI_ENDPOINT', 'AZURE_OPENAI_DEPLOYMENT_NAME'],
-  'low' => ['AZURE_OPENAI_ENDPOINT_LOW', 'AZURE_OPENAI_DEPLOYMENT_LOW'],
-  'high' => ['AZURE_OPENAI_ENDPOINT_HIGH', 'AZURE_OPENAI_DEPLOYMENT_HIGH'],
-];
-
-foreach ($azure_openai_tiers as $azure_tier => [$azure_endpoint_var, $azure_deployment_var]) {
-  $azure_endpoint = getenv($azure_endpoint_var);
-  $azure_deployment = getenv($azure_deployment_var);
-
-  if (!$azure_endpoint || !$azure_deployment) {
-    continue;
-  }
-
-  $config['ai.settings']['models']['azure']['chat'][$azure_deployment] = [
-    'endpoint' => $azure_endpoint,
-    'api_key' => 'helfi_azure_openai',
-    'connect_header' => 'api-key',
-  ];
-  $config['helfi_ai.settings']['model_tiers'][$azure_tier] = 'azure__' . $azure_deployment;
-
-  if ($azure_tier === 'default') {
-    $config['ai.settings']['default_providers']['chat']['model_id'] = $azure_deployment;
-    $config['ai.settings']['default_providers']['embeddings']['model_id'] = $azure_deployment;
-  }
+// Helfi Text Services API:
+// See: https://helsinkisolutionoffice.atlassian.net/browse/UHF-13623.
+if ($helfi_text_api_key = getenv('HELFI_TEXT_API_KEY')) {
+  $config['helfi_ai.settings']['text_services']['api_key'] = $helfi_text_api_key;
 }
 
 // Hakuvahti:

@@ -1,7 +1,12 @@
 display:
   default:
-    display_title: Förvald
     display_options:
+      empty:
+        area:
+          content:
+            format: full_html
+            value: '<p>No pages to display.</p>'
+      title: 'My pages'
       fields:
         views_bulk_operations_bulk_form:
           action_title: Åtgärd
@@ -13,6 +18,8 @@ display:
         title:
           label: Titel
           separator: ', '
+        helfi_favorite:
+          label: Favorit
         type:
           label: Innehållstyp
           separator: ', '
@@ -30,8 +37,8 @@ display:
             format_custom_false: 'Ej publicerad'
             format_custom_true: Publicerad
           separator: ', '
-        changed:
-          label: Uppdaterad
+        changed_at:
+          label: 'Uppdaterad av användare'
           separator: ', '
         operations:
           label: Funktioner
@@ -73,5 +80,6 @@ display:
         langcode:
           expose:
             label: Språk
+    display_title: Förvald
   your_content_block:
     display_title: Block
