@@ -1,0 +1,12 @@
+uuid: 8398c04f-27ef-45ef-bc39-ac24cf19f1ed
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3H5aqqq5JCcM8em9lMD5EG77Wh-MxuMAPfYCPr2Mh2o
+id: chartjs_chart
+label: 'Chartjs chart'
+icon_uuid: null
+icon_default: null
+description: 'Chartjs chart'
+behavior_plugins: {  }
